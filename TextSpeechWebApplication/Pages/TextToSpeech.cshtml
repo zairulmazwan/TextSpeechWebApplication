@@ -1,0 +1,20 @@
+﻿@page
+
+@model TextSpeechWebApplication.Pages.TextToSpeechModel
+@{
+
+}
+
+
+
+
+<form id="form1" runat="server">
+    <div style="border: 1px solid #357ae8; padding-top: 15px; width: 500px; height: 350px">
+        <h1 style="color: #3d75bd;">Asp .net text to speech using c#</h1>
+        <br />
+        <textarea type="text" asp-for="Text.Text" runat="server" TextMode="MultiLine" Width="600px" Height="300px"></textarea>
+        <br />
+        <input type="button" ID="btnSpeak" runat="server" value="Click To Speak" OnClick="btnSpeak_Click" />
+        <br />
+    </div>
+</form>
